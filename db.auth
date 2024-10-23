@@ -1,0 +1,11 @@
+<?php
+// Include the MongoDB library
+require_once 'path/to/mongodb/vendor/autoload.php'; // Adjust the path as necessary
+
+// Function to get MongoDB connection
+function getMongoConnection() {
+    // Replace with your MongoDB connection string
+    $client = new MongoDB\Driver\Manager("<db>://<username>:<password>@<dbhost>:<dbport>");
+    return $client; // Returns the MongoDB client
+}
+?>
